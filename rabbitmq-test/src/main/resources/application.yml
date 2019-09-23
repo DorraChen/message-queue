@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: rabbitmq-test
+  mvc:
+    pathmatch:
+      use-suffix-pattern: true
+---
+server:
+  port: 8080
+  servlet:
+    context-path: /rabbitmq-test
+    path: "*.do"
+spring:
+  rabbitmq:
+    host: localhost
+    port: 15672
+    username: guest
+    password: guest
+---
+
