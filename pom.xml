@@ -19,7 +19,6 @@
     </properties>
 
     <modules>
-        <module>commons</module>
         <module>rabbitmq-test</module>
     </modules>
 
